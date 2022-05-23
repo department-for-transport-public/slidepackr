@@ -7,7 +7,7 @@ SlidepackR is a DfT-created R package to build HTML slidepacks in Rmarkdown with
 The package can be installed directly from Github using the remotes `install_github` call
 
     install.packages("remotes")
-    remotes::install_github("department-for-transport/slidepackr")
+    remotes::install_github("department-for-transport-public/slidepackr")
 
 ## Usage
 
