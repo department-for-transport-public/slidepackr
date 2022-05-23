@@ -1,0 +1,19 @@
+Package: slidepackR
+Type: Package
+Title: Create DfT-Themed HTML slidepacks in R
+Version: 0.1.0
+Authors@R: c(
+    person("Francesca", "Bryden", , "francesca.bryden@dft.gov.uk", role = c("aut", "cre")),
+    person("Linda", "Bennett", role = "aut"),
+    person("Mohan", "Dell", role = "aut"),
+    person("Sally", "Sharp", role = "aut"),
+    person("Sara", "Smith", role = "aut")
+    )
+Imports: htmltools, xfun, ggplot2
+Description: Builds on the existing xaringan package to easily create HTML slidepacks.
+    Package includes options to automatically download component parts to the slidepack into your working directory,
+    as well as functions to create slides with pre-set DfT backgrounds.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: false
+RoxygenNote: 7.2.0

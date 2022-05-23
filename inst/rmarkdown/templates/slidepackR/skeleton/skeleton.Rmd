@@ -1,0 +1,68 @@
+---
+output: slidepackR::dft_slidepack
+---
+
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+
+```{r}
+slidepackR::title_slide(title = "Using DfT's slidepackR", content = "A template to create simple formatted HTML slidepacks", footer = "OFFICIAL SENSITIVE")
+```
+
+
+```{r}
+slidepackR::content_slide()
+```
+
+## Using this template
+
+* Use the `title_slide()` and `content_slide()` functions to add new slides to your slidepack. 
+* Content slides can have any markdown or R content added to them after the initial call, this does not need to be wrapped in the function to display.
+* If this is the first time you are using slidepackR slides in a project, you will need to add relevant JS libraries and background images using the *r slidepackR::setup_project()* function.
+
+```{r}
+slidepackR::content_slide()
+```
+
+## Formatting text
+
+* By default, you will want slide titles to be a second-level header ("##")
+* Slide content should not need any markdown formatting
+
+```{r}
+slidepackR::format_text("If you would like to format individual lines of text, you can do this using the format_text function to change size, colour or font weight", size = 20, colour = "red", weight = "bolder")
+
+```
+
+
+```{r}
+slidepackR::content_slide()
+```
+
+
+## Two-column layouts
+
+```{r}
+slidepackR::even_cols(
+  "Even column layouts allow you to have two columns of equal widths",
+  "The two columns can contain text, images, charts or tables"
+)
+```
+
+
+```{r}
+slidepackR::content_slide()
+```
+
+## Uneven two column layouts
+
+```{r}
+slidepackR::uneven_cols(
+  "The uneven column layout has two columns of uneven width; the left column makes up 25% of the total width, and is designed for metadata or information",
+  "The right column takes up 75% of the total width, and is ideal for content such as text, images, charts or tables"
+)
+```

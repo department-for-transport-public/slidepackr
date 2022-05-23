@@ -1,0 +1,4 @@
+name: DfT Slidepack
+description: >
+  Create a DfT-themed slidepack based on remark.js using the slidepackR package.
+create_dir: false
