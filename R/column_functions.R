@@ -14,7 +14,7 @@ uneven_cols <- function(left, right){
     stop("Chunk option fig.show must be set to 'hide'")
   }
   
-  if("ggplot" %in% class(left)|"plotly" %in% class(left)){
+  if("ggplot" %in% class(right)|"plotly" %in% class(right)){
     right <- convert_ggplot(right, img_no)
     img_no <- img_no + 1
     
@@ -58,7 +58,7 @@ even_cols <- function(left, right){
     img_no <- img_no + 1 #Imcrement image number
   }
   
-  if("ggplot" %in% class(left)|"plotly" %in% class(left)){
+  if("ggplot" %in% class(right)|"plotly" %in% class(right)){
     right <- convert_ggplot(right, img_no)
     img_no <- img_no + 1
     
