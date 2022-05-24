@@ -225,7 +225,7 @@ encode_file = function(x) {
 
 
 ##Make use of ggplot objects in colum structures
-convert_ggplot <- function(x){
+convert_ggplot <- function(x, img_no){
   print(x)
   right <- paste0("![](",
                   opts_current$get("fig.path"),

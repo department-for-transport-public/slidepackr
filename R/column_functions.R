@@ -49,12 +49,12 @@ even_cols <- function(left, right){
   img_no <- 1
   
   if(ggplot2::is.ggplot(left)){
-    left <- convert_ggplot(left)
+    left <- convert_ggplot(left, img_no)
     img_no <- img_no + 1 #Imcrement image number
   }
   
   if(ggplot2::is.ggplot(right)){
-    right <- convert_ggplot(right)
+    right <- convert_ggplot(right, img_no)
     img_no <- img_no + 1
     
   }
