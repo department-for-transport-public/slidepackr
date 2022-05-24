@@ -4,12 +4,12 @@
 \alias{uneven_cols}
 \title{Create a column structure for a slide with a large right column (75\% width) and small left column (25\% width)}
 \usage{
-uneven_cols(text, content)
+uneven_cols(left, right)
 }
 \arguments{
-\item{text}{string, text content to appear in the smaller left column}
+\item{left}{string, text content to appear in the smaller left column}
 
-\item{content}{any R studio object (chart, table, text) to appear in the larger right column}
+\item{right}{any R studio object (chart, table, text) to appear in the larger right column}
 }
 \description{
 Create a column structure for a slide with a large right column (75\% width) and small left column (25\% width)

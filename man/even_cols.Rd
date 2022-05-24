@@ -4,12 +4,12 @@
 \alias{even_cols}
 \title{Create a column structure for a slide with equal right and left columns}
 \usage{
-even_cols(text, content)
+even_cols(left, right)
 }
 \arguments{
-\item{text}{string, text content to appear in the smaller left column}
+\item{left}{content to appear in the left column}
 
-\item{content}{any R studio object (chart, table, text) to appear in the larger right column}
+\item{right}{content to appear in the right column}
 }
 \description{
 Create a column structure for a slide with equal right and left columns

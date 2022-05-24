@@ -222,3 +222,15 @@ encode_file = function(x) {
   }
   xfun::base64_uri(tf)
 }
+
+
+##Make use of ggplot objects in colum structures
+convert_ggplot <- function(x){
+  print(x)
+  right <- paste0("![](",
+                  opts_current$get("fig.path"),
+                  opts_current$get("label"),
+                  "-",
+                  img_no,
+                  ".png)")
+}
