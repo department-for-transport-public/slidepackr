@@ -7,9 +7,9 @@
 uneven_cols(left, right)
 }
 \arguments{
-\item{left}{string, text content to appear in the smaller left column}
+\item{left}{string, text content to appear in the smaller left column; multiple string objects can be passed as a list.}
 
-\item{right}{any R studio object (chart, table, text) to appear in the larger right column}
+\item{right}{any R studio object (chart, table, text) to appear in the larger right column; multiple objects can be passed as a list.}
 }
 \description{
 Create a column structure for a slide with a large right column (75\% width) and small left column (25\% width)

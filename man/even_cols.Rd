@@ -7,9 +7,9 @@
 even_cols(left, right)
 }
 \arguments{
-\item{left}{content to appear in the left column}
+\item{left}{content to appear in the left column; multiple objects can be passed as a list.}
 
-\item{right}{content to appear in the right column}
+\item{right}{content to appear in the right column; multiple objects can be passed as a list.}
 }
 \description{
 Create a column structure for a slide with equal right and left columns
