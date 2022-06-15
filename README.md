@@ -51,6 +51,8 @@ Content slides can be easily created by using the `slidepackR::content_slide()` 
 
 As default, new content slides will have a single open area to add any content to. If you want a structure with two columns, you can add this using the `slidepackR::even_columns()` and `slidepackR::uneven_columns` functions. Both of these functions split the side into two separate columns, dividing the space 50:50 or 25:75 respectively. Content of the two columns is passed to the function as arguments; this can include text, images, charts or tables, e.g.
 
+Due to the CSS formatting involved, both of these functions require the chunk parameter `fig.show = "hide"` to be set in the relevant code chunk.
+
 `slidepackR::uneven_cols(
   "The uneven column layout has two columns of uneven width; the left column makes up 25% of the total width, and is designed for metadata or information",
   "The right column takes up 75% of the total width, and is ideal for content such as text, images, charts or tables"

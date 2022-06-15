@@ -9,7 +9,7 @@ Authors@R: c(
     person("Sally", "Sharp", role = "aut"),
     person("Sara", "Smith", role = "aut")
     )
-Imports: htmltools, xfun, ggplot2
+Imports: htmltools, xfun, knitr
 Description: Builds on the existing xaringan package to easily create HTML slidepacks.
     Package includes options to automatically download component parts to the slidepack into your working directory,
     as well as functions to create slides with pre-set DfT backgrounds.
