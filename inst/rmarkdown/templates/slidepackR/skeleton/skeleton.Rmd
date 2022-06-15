@@ -46,7 +46,7 @@ slidepackR::content_slide()
 
 ## Two-column layouts
 
-```{r}
+```{r fig.show='hide'}
 slidepackR::even_cols(
   "Even column layouts allow you to have two columns of equal widths",
   "The two columns can contain text, images, charts or tables"
@@ -60,7 +60,7 @@ slidepackR::content_slide()
 
 ## Uneven two column layouts
 
-```{r}
+```{r fig.show='hide'}
 slidepackR::uneven_cols(
   "The uneven column layout has two columns of uneven width; the left column makes up 25% of the total width, and is designed for metadata or information",
   "The right column takes up 75% of the total width, and is ideal for content such as text, images, charts or tables"
