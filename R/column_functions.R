@@ -14,6 +14,16 @@ uneven_cols <- function(left, right){
     stop("Chunk option fig.show must be set to 'hide'")
   }
   
+  ##Set starting image number
+  img_no <- 1
+  
+  ##Fix problem of ggplots being lists (why does R hate me?)
+ 
+   if("ggplot" %in% class(right)){
+    right <- convert_ggplot(right, img_no)
+    
+  } else if(class(right) == "list"){
+  
   for(i in 1:length(right)){
     
     if("ggplot" %in% class(right[[i]])){
@@ -21,6 +31,7 @@ uneven_cols <- function(left, right){
       img_no <- img_no + 1
       
     }
+  }
   }
   
   ##Collapse lists into vectors
@@ -60,16 +71,26 @@ even_cols <- function(left, right){
   ##Set starting image number
   img_no <- 1
   
-  ##Loop over and convert all objects for left and right
-  for(i in 1:length(left)){
+  ##Fix problem of ggplots being lists
+  
+  if("ggplot" %in% class(left)){
+    left <- convert_ggplot(left, img_no)
     
-    if("ggplot" %in% class(left[[i]])){
-      left[[i]] <- convert_ggplot(left[[i]], img_no)
-      img_no <- img_no + 1 #Imcrement image number
+  } else if(class(left) == "list"){
+    ##Loop over and convert all objects for left and right
+    for(i in 1:length(left)){
+      
+      if("ggplot" %in% class(left[[i]])){
+        left[[i]] <- convert_ggplot(left[[i]], img_no)
+        img_no <- img_no + 1 #Imcrement image number
+      }
     }
   }
   
-  
+  if("ggplot" %in% class(right)){
+    right <- convert_ggplot(right, img_no)
+    
+  }else if(class(right) == "list"){
   for(i in 1:length(right)){
     
     if("ggplot" %in% class(right[[i]])){
@@ -78,6 +99,7 @@ even_cols <- function(left, right){
       
     }
   }
+}
   
   ##Collapse lists into vectors
   left <- paste(left, collapse = "\n")
