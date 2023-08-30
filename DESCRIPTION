@@ -1,7 +1,9 @@
 Package: slidepackR
 Type: Package
 Title: Create DfT-Themed HTML slidepacks in R
+
 Version: 0.1.2
+
 Authors@R: c(
     person("Francesca", "Bryden", , "francesca.bryden@dft.gov.uk", role = c("aut", "cre")),
     person("Linda", "Bennett", role = "aut"),
