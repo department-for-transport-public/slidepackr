@@ -224,7 +224,7 @@ encode_file = function(x) {
 }
 
 
-##Make use of ggplot objects in colum structures
+##Make use of ggplot objects in column structures
 convert_ggplot <- function(x, img_no){
   print(x)
   paste0("![](",
