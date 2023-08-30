@@ -228,9 +228,11 @@ encode_file = function(x) {
 convert_ggplot <- function(x, img_no){
   print(x)
   paste0("![](",
-         opts_current$get("fig.path"),
-         opts_current$get("label"),
+         knitr::opts_current$get("fig.path"),
+         knitr::opts_current$get("label"),
          "-",
          img_no,
-         ".png)")
+         ".",
+         knitr::opts_current$get("dev"),
+         ")")
 }
